@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/**
+ * Design tokens referenced by `tailwind.config.ts` —
+ * accent, canvas warmth, constellation brown, motion easing.
+ */
+:root {
+  --background: #faf8f5;
+  --foreground: #1a1a1a;
+  --accent: #39ff14;
+  --navy: #2c1b16;
+  --surface: #f0eeeb;
+  --footer-muted: #575757;
+  --ease-resolve: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-serif-display), Georgia, serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
